@@ -1,16 +1,17 @@
 package nv21
 
-/**
-  * Created by HanHan on 2016/6/17.
-  */
-package nv21
 
 /**
+  * 将nv21格式的图片转换为rgb格式的图片
+  *
+  * 原题目网址 https://bitbucket.org/snippets/centaur/nKzg4
+  *
+  *
   * Created by HanHan on 2016/6/17.
   */
 object Test{
 
-  implicit def clamp(x: Double): Short = Math.round(0.0 max x min 255).toShort
+  implicit def clam(x: Double): Short = Math.round(0.0 max x min 255).toShort
 
 
   def nv21_to_rgb(src: Array[Short], width: Int): Array[Short] = {
